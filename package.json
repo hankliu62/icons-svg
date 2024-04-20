@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "start": "dumi dev",
-    "docs:build": "dumi build",
+    "docs:build": "npm run compile && dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "now-build": "npm run docs:build",
     "g": "npm run generate",
