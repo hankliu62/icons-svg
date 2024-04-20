@@ -86,9 +86,7 @@ export interface AbstractNode {
 export interface IconDefinition {
   name: string; // kebab-case-style
   theme: ThemeType;
-  icon:
-    | ((primaryColor: string, secondaryColor: string) => AbstractNode)
-    | AbstractNode;
+  icon: ((primaryColor: string, secondaryColor: string) => AbstractNode) | AbstractNode;
 }
 ```
 
@@ -99,7 +97,7 @@ import { AccountBookFilled } from '@hankliu/icons-svg';
 import { renderIconDefinitionToSVGElement } from '@hankliu/icons-svg/es/helpers';
 
 const svgHTMLString = renderIconDefinitionToSVGElement(AccountBookFilled, {
-  extraSVGAttrs: { width: '1em', height: '1em', fill: 'currentColor' }
+  extraSVGAttrs: { width: '1em', height: '1em', fill: 'currentColor' },
 });
 
 console.log(svgHTMLString);
@@ -112,7 +110,7 @@ console.log(svgHTMLString);
 ```ts
 declare function renderIconDefinitionToSVGElement(
   icon: IconDefinition,
-  options?: HelperRenderOptions
+  options?: HelperRenderOptions,
 ): string;
 
 interface HelperRenderOptions {
@@ -130,7 +128,7 @@ interface HelperRenderOptions {
 
 `npm start` 然后打开 http://localhost:8000/examples/
 
-线上案例: https://hankliu62.github.io/icons/icons-svg
+线上案例: https://hankliu62.github.io/icons-svg
 
 ## 单元测试
 
