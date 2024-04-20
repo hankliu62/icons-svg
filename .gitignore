@@ -43,3 +43,5 @@ docz-dist
 /coverage
 
 .env.local
+
+pnpm-lock.yaml
