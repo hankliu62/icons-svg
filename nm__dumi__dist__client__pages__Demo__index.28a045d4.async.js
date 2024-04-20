@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_hankliu_icons_svg=self.webpackChunk_hankliu_icons_svg||[]).push([[9],{65149:function(v,n,e){e.r(n),e.d(n,{default:function(){return u}});var a=e(27544),s=e(67294),t=function(){var r=(0,a.UO)(),d=r.id,m=(0,a.WF)(),c=m.demos,i=c[d]||{},o=i.component;return o&&(0,s.createElement)(o)},u=t}}]);
