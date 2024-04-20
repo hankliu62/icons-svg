@@ -11,7 +11,7 @@ const config: ReturnType<typeof defineConfig> = {
   themeConfig: {
     name: 'Image',
     logo: 'https://hankliu62.github.io/frontend/favicon.ico'
-  }
+  },
   outputPath: '_site',
 };
 

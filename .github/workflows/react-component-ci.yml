@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   setup:
@@ -147,11 +147,11 @@ jobs:
       - name: 打包 🏗️
         run: npm run compile
 
-      # 发布
-      - name: 发布 🚀
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
+      # # 发布
+      # - name: 发布 🚀
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   run: npm publish --access public
 
     needs: [lint, coverage]
 
@@ -178,13 +178,13 @@ jobs:
 
       # 生成文档
       - name: 生成文档 🍚
-        run: npm run docs:build && touch ./dist/.nojekyll # run: touch ./_website/.nojekyll是因为由于 Jekyll 处理,GitHub 默认不提供_next文件夹,.nojekyll文件阻止了这种情况,
+        run: npm run docs:build && touch ./_site/.nojekyll # run: touch ./_website/.nojekyll是因为由于 Jekyll 处理,GitHub 默认不提供_next文件夹,.nojekyll文件阻止了这种情况,
 
       - name: 部署 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # 部署后提交到那个分支
-          folder: dist # 这里填打包好的目录名称
+          folder: _site # 这里填打包好的目录名称
           clean: true
 
     needs: compile
