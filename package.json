@@ -1,16 +1,17 @@
 {
   "name": "@hankliu/icons-svg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "sideEffects": false,
-  "description": "Abstract nodes for hankliu ui icons.",
-  "homepage": "https://github.com/hankliu62/colors",
+  "description": "🥭 Abstract nodes for hankliu ui icons.",
+  "homepage": "https://github.com/hankliu62/icons-svg",
   "bugs": {
-    "url": "http://github.com/hankliu62/colors/issues"
+    "url": "http://github.com/hankliu62/icons-svg/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git@github.com/hankliu62/colors.git"
+    "url": "git+https://git@github.com/hankliu62/icons-svg.git"
   },
+  "author": "hank.liu",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -22,7 +23,7 @@
   ],
   "scripts": {
     "start": "dumi dev",
-    "docs:build": "npm run compile && dumi build",
+    "docs:build": "npm run generate && dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "now-build": "npm run docs:build",
     "g": "npm run generate",

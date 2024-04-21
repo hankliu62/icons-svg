@@ -16,7 +16,7 @@
 [dumi-url]: https://github.com/umijs/dumi
 [dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square
 
-⭐ HankLiu SVG 矢量图库，基于 Ant Design SVG 矢量图库，在此基础上新增了许多自定义的 SVG 图标，便于丰富矢量图库，便于业务开发。
+🥭 HankLiu SVG 矢量图库，基于 Ant Design SVG 矢量图库，在此基础上新增了许多自定义的 SVG 图标，便于丰富矢量图库，便于业务开发。
 
 ## 安装
 

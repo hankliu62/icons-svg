@@ -1,7 +1,7 @@
 ---
 title: Icons Svg案例
 nav:
-  title: Icons Svg案例
+  title: 案例
   path: /icons-svg/demo
 ---
 
