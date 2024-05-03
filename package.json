@@ -55,7 +55,7 @@
     "@types/lodash.template": "^4.5.3",
     "@types/lodash.upperfirst": "^4.3.9",
     "@types/node": "^20.12.7",
-    "@types/ramda": "^0.29.12",
+    "@types/ramda": "^0.30.0",
     "@types/react": "^18.2.79",
     "@types/rgrove__parse-xml": "^1.1.5",
     "@types/svgo": "^2.6.4",
